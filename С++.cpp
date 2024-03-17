@@ -37,7 +37,7 @@ public:
 
 void main(){
 	setlocale(LC_ALL, "ru");
-	unsigned char const b[6] = { 'P', 'i', 'z', 'z', 'a', '\0' };
-	Encoder ae(b, 5);
+	//unsigned char const b[6] = { 'P', 'i', 'z', 'z', 'a', '\0' };
+	Encoder ae(reinterpret_cast<unsigned const char *>("Pizza"), 5);
 	Encoder mimya(ae);
 }
